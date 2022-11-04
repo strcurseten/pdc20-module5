@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <script>
+            class brandA {
+                display() {
+                    document.writeln("Brand A: Toyota");
+                }
+            }
+
+            class brandB extends class brandA {
+                display() {
+                    document.writeln("Brand B: Honda");
+                }
+            }
+
+            var a = [new brandA(), new brandB()]
+            a.forEach(function (msg){
+                msg.display();
+            });
+
+        </script>
+    </body>
+</html>
